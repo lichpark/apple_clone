@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PillButton from "./components/buttons/PillButton";
+import HeaderMenu from "./components/headermenu/HeaderMenu";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PillButton
+        buttonText="더 알아보기"
+        bgcolor="pill_button_blue"
+        color="pill_button_white"
+      ></PillButton>
+      <>
+        <HeaderMenu bgcolor={"header_background_black"}></HeaderMenu>
+      </>
     </div>
   );
 }
