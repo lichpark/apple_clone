@@ -1,12 +1,19 @@
-import { Pill, colorObj } from "../../styles/color";
+import { ReactNode } from "react";
+import { Pill, colorObj } from "../../../styles/color";
+import { IconType } from "react-icons";
 
 type NavLinkProp = {
-  headerNavText: string;
-  headerNavLink: string;
-  color: Pill;
+  Icon: IconType;
+
+  headerNavLink?: string;
+  color?: Pill;
 };
 
-export const NavLinks = (props: NavLinkProp) => {
+export const NavLinksIcon = ({
+  color = "header_a_deco_white",
+  headerNavLink = "",
+  Icon,
+}: NavLinkProp) => {
   const NavLink__Css: React.CSSProperties = {
     display: "flex",
     alignItems: "center",
@@ -21,18 +28,18 @@ export const NavLinks = (props: NavLinkProp) => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    color: `${colorObj[props.color]}`,
+    color: `${colorObj[color]}`,
     textDecoration: "none",
     whiteSpace: "nowrap",
     padding: "10px 5px",
   };
   return (
     <li style={NavLink__Css}>
-      <a href={props.headerNavLink} style={NavLink__aCss}>
-        {props.headerNavText}
+      <a href={headerNavLink} style={NavLink__aCss}>
+        <Icon />
       </a>
     </li>
   );
 };
 
-export default NavLinks;
+export default NavLinksIcon;
