@@ -5,6 +5,9 @@ import NavLinks from "./components/headermenu/header__nav__links/NavLinks";
 import { icons } from "./constants/Icons";
 import { NavLinksIcon } from "./components/headermenu/header__nav__links/NavLinksIcon";
 import Main1 from "./components/layout/main/main1/Main1";
+import Main2 from "./components/layout/main/main2/Main2";
+import Main3 from "./components/layout/main/main3/Main3";
+import Main4 from "./components/layout/main/main4/Main4";
 
 function App() {
   return (
@@ -34,7 +37,10 @@ function App() {
             <NavLinksIcon Icon={icons.IoBag} headerNavLink="" />,
           ]}
         />
-        <Main1 />
+        <Main1 mtop="40" />
+        <Main2 mtop="20" />
+        <Main3 mtop="20" />
+        <Main4 />
       </>
     </div>
   );

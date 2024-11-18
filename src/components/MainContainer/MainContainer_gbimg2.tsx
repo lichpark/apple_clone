@@ -3,12 +3,12 @@ import PillButton from "../buttons/PillButton";
 import TextWrap from "../text/TextWrap";
 import { FaApple } from "react-icons/fa";
 
-export type MainContainer_gbimgProp = {
+export type MainContainer_gbimgProp2 = {
   bgimg?: string;
   mtop?: string;
 };
 
-const MainContainer_gbimg = (props: MainContainer_gbimgProp) => {
+const MainContainer_gbimg2 = (props: MainContainer_gbimgProp2) => {
   const { bgimg = "", mtop = "" } = props;
 
   const css: React.CSSProperties = {
@@ -38,30 +38,24 @@ const MainContainer_gbimg = (props: MainContainer_gbimgProp) => {
           bold={true}
           color="black"
           size="48px"
-          text={` Apple Vision Pro`}
-          Icon={FaApple}
+          text={`올 선물은 감동`}
         />
         <TextWrap
           bold={false}
           color="black"
           size="24px"
-          text="공간 컴퓨팅의 시대가 이제 여기에."
+          text="누구나 받고싶은 연말 연시 선물"
         />
         <div style={{ marginBottom: "4%" }}>
           <PillButton
-            buttonText="더 알아보기"
+            buttonText="선물 쇼핑하기"
             bgcolor="pill_button_blue"
             color="pill_button_white"
           ></PillButton>{" "}
-          <PillButton
-            buttonText="구입하기"
-            bgcolor="pill_button_none"
-            color="pill_button_blue"
-          ></PillButton>
         </div>
       </div>
     </div>
   );
 };
 
-export default MainContainer_gbimg;
+export default MainContainer_gbimg2;

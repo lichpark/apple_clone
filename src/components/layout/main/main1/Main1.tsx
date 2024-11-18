@@ -6,7 +6,12 @@ type main1props = MainContainer_gbimgProp;
 
 const Main1 = (props: main1props) => {
   return (
-    <MainContainer_gbimg bgimg="https://www.apple.com/kr/home/bv/images/heroes/apple-vision-pro/hero_apple_vision_pro_alt_announce__dvkmwlr7ihiu_medium.jpg" />
+    <>
+      <MainContainer_gbimg
+        mtop="40"
+        bgimg="https://www.apple.com/kr/home/bv/images/heroes/apple-vision-pro/hero_apple_vision_pro_alt_announce__dvkmwlr7ihiu_medium.jpg"
+      />
+    </>
   );
 };
 

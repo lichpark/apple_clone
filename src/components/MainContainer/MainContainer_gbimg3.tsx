@@ -3,12 +3,12 @@ import PillButton from "../buttons/PillButton";
 import TextWrap from "../text/TextWrap";
 import { FaApple } from "react-icons/fa";
 
-export type MainContainer_gbimgProp = {
+export type MainContainer_gbimgProp3 = {
   bgimg?: string;
   mtop?: string;
 };
 
-const MainContainer_gbimg = (props: MainContainer_gbimgProp) => {
+const MainContainer_gbimg3 = (props: MainContainer_gbimgProp3) => {
   const { bgimg = "", mtop = "" } = props;
 
   const css: React.CSSProperties = {
@@ -36,18 +36,11 @@ const MainContainer_gbimg = (props: MainContainer_gbimgProp) => {
       <div style={incss}>
         <TextWrap
           bold={true}
-          color="black"
+          color="white"
           size="48px"
-          text={` Apple Vision Pro`}
-          Icon={FaApple}
+          text={`Iphone 16 PRO`}
         />
-        <TextWrap
-          bold={false}
-          color="black"
-          size="24px"
-          text="공간 컴퓨팅의 시대가 이제 여기에."
-        />
-        <div style={{ marginBottom: "4%" }}>
+        <div style={{ marginBottom: "2%", marginTop: "28%" }}>
           <PillButton
             buttonText="더 알아보기"
             bgcolor="pill_button_blue"
@@ -59,9 +52,17 @@ const MainContainer_gbimg = (props: MainContainer_gbimgProp) => {
             color="pill_button_blue"
           ></PillButton>
         </div>
+        <div style={{ paddingBottom: "4%" }}>
+          <TextWrap
+            bold={false}
+            color="#86868b"
+            size="14px"
+            text="Apple Intelligence, 현재 미국 영어로 서비스 중"
+          />
+        </div>
       </div>
     </div>
   );
 };
 
-export default MainContainer_gbimg;
+export default MainContainer_gbimg3;

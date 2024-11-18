@@ -13,7 +13,7 @@ const PillButton = (props: pillButtonProp) => {
     lineHeight: "1.17648",
     fontWeight: "400",
     letterSpacing: ".022em",
-    border: `1px solid ${colorObj[props.bgcolor]}`,
+    border: `1px solid ${colorObj[props.color]}`,
     backgroundColor: `${colorObj[props.bgcolor]}`,
     borderRadius: "980px",
     minWidth: "28px",

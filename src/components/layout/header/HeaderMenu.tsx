@@ -14,6 +14,11 @@ const HeaderMenu = ({ children, bgcolor }: headerMenuProps) => {
     backgroundColor: `${colorObj[bgcolor]}`,
     listStyle: "none",
     margin: "0",
+    position: "fixed",
+    left: "0",
+    top: "0",
+    height: "40px",
+    width: "100%",
   };
   return (
     <header>
