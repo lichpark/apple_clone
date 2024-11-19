@@ -17,6 +17,8 @@ const TextWrap = (props: BigTitleProps) => {
     color: `${color}`,
     fontWeight: `${bold}`,
     letterSpacing: "-2px",
+    whiteSpace: "pre-line",
+    textAlign: "center",
   };
   return (
     <div style={bigTitleCss}>

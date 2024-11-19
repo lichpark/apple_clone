@@ -2,9 +2,7 @@ import MainContainer_gbimg, {
   MainContainer_gbimgProp,
 } from "../../../MainContainer/MainContainer_gbimg";
 
-type main1props = MainContainer_gbimgProp;
-
-const Main1 = (props: main1props) => {
+const Main1 = () => {
   return (
     <>
       <MainContainer_gbimg

@@ -23,7 +23,12 @@ const PillButton = (props: pillButtonProp) => {
     textAlign: "center",
     whiteSpace: "nowrap",
   };
-  return <button style={pillButtonCss}>{props.buttonText}</button>;
+
+  return (
+    <button className={props.bgcolor} style={pillButtonCss}>
+      {props.buttonText}
+    </button>
+  );
 };
 
 export default PillButton;

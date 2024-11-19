@@ -16,7 +16,7 @@ const MainContainer_gbimg3 = (props: MainContainer_gbimgProp3) => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top",
     width: "100%",
-    height: "60vh",
+    height: "570px",
     // marginTop: "40px",
     marginTop: `${mtop}px`,
     display: "flex",
